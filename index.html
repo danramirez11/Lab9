@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="ventana" id="escribir">
+        <img class="fotoDePerfil" src="https://i.pinimg.com/564x/2f/85/16/2f8516f8a144e9a88ca36ac4729d340e.jpg" alt="">
+        <button class="boton" id="abrir" onclick="abrir()">What are you thinking, Pidge?</button>
+    </div>
+
+    <div class="posts" id="posts">
+        
+    </div>
+
+
+
+    <div class="modal hide" id="modal">
+        <div class="modal-content">
+        <div class="modal-barra">
+            <p>Make a post</p>
+            <button class="boton" id="cerrar" onclick="cerrar()">X</button>
+        </div>
+        <div class="nombre">
+            <img class="fotoDePerfil-modal" src="https://i.pinimg.com/564x/2f/85/16/2f8516f8a144e9a88ca36ac4729d340e.jpg" alt="">
+            <p>Pidge Holt</p>
+        </div>
+        <input class="input" id="input" type="text" placeholder="What are you thinking, Pidge?">
+        <button class="boton" id="publicar" onclick="publicar()" disabled>Publish</button>
+    </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
